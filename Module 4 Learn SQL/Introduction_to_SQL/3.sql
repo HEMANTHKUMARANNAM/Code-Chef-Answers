@@ -19,4 +19,7 @@
 -- A parameter is a set of values, columns, or data types that are provided to a clause as an input argument.
 -- Click on Next to proceed.
 
--- Click on **Next** to proceed.
+
+-- ANSWER
+
+Click on **Next** to proceed.

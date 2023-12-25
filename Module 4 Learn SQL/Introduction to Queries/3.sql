@@ -9,3 +9,13 @@
 -- Write the above query in the IDE to get the unique origin locations.
 -- Code it out in the IDE.
 
+
+
+
+-- ANSWER
+
+/* Write a query to find the unique origin locations */
+
+Select Distinct Origin 
+from Flights;
+

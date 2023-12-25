@@ -19,4 +19,7 @@
 -- The column Employee_id is an INTEGER, column Employee_Name and Department are TEXT
 -- Click on Next to proceed.
 
--- Click on **Next** to proceed.
+
+-- ANSWER
+
+Click on **Next** to proceed.

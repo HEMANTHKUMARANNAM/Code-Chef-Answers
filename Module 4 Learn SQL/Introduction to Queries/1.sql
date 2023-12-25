@@ -6,4 +6,7 @@
 
 -- Let us check the data currently stored in the Flights table. Click on 'Submit' to proceed.
 
--- select * from Flights
+
+-- ANSWER
+
+select * from Flights
