@@ -17,6 +17,14 @@
 
 
 
+
+
+
+
+
+
+
+
 -- ANSWER
 
 /* Write a query to add the below mentioned employee details to the EMPLOYEE table.

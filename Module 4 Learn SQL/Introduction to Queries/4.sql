@@ -7,3 +7,15 @@
 --     from Flights
 --     WHERE Origin = 'Mumbai';
 -- Code it out in the IDE.
+
+
+
+
+
+-- ANSWER
+
+/* Write a query to identify flights that originate out of Mumbai */
+
+Select *
+from Flights
+WHERE Origin = 'Mumbai';

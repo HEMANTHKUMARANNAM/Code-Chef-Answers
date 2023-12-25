@@ -22,6 +22,14 @@
 
 
 
+
+
+
+
+
+
+
+
 -- ANSWER
 
 /* Write a query to create a table employee with the mentioned constraints on the columns : 

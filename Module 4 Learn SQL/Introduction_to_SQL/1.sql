@@ -21,10 +21,12 @@
 
 
 
-/*Click on Submit to check the output.
-Click on Next to proceed */
 
 
 -- ANSWER
+
+
+/*Click on Submit to check the output.
+Click on Next to proceed */
 
 SELECT * from employee;

@@ -8,12 +8,19 @@
 -- Name (TEXT),
 -- Age (INT),
 -- Address UNIQUE (TEXT)
-/* Debug this query to run the problem successfully. 
-- Don’t worry about the actual values as long as you get the query to run. */
+
+
+
+
 
 
 
 -- ANSWER
+
+
+/* Debug this query to run the problem successfully. 
+- Don’t worry about the actual values as long as you get the query to run. */
+
 
 INSERT INTO employee (Id,Name,Age,Address)
 VALUES  (1, 'John Smith', 25,  '123 Main St'),

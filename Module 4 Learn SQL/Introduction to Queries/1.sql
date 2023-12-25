@@ -7,6 +7,14 @@
 -- Let us check the data currently stored in the Flights table. Click on 'Submit' to proceed.
 
 
+
+
+
+
+
+
+
+
 -- ANSWER
 
 select * from Flights

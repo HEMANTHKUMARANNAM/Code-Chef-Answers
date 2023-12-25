@@ -12,6 +12,8 @@
 
 
 
+
+
 -- ANSWER
 
 /* Write a query to find the unique origin locations */
