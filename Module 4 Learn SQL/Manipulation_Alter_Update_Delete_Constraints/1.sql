@@ -1,17 +1,17 @@
--- The UPDATE statement is used to edit a row or multiple rows in a table.
--- Below is the query to Set the Age as 6, for the student with student_id - 23 to the existing table student.
+-- The ALTER statement is used to append a new column to an existing table.
+-- Below is the query to add a new column 'Department' and set a default value, to the existing table student.
 
 -- UPDATE student
 -- SET Age = 6
 -- WHERE student_id = 23;
--- The 'WHERE' condition can be applied for any column. We will learn more about 'WHERE' in the next module
+-- While altering the table we can either keep the newly added column blank or we could set a default value (as mentioned above) to it. Lets run the query by adding a default value to the newly added column.
 
 -- Task
 -- Write a query to do the following
 
--- Set the Department as 'HR', for the employee with employee_id - 02 to the existing table employee
--- Output all the entries of the table
--- Original table has the following entries
+-- Add a column 'Designation' to the table 'employee' and set 'Null' as the default value.
+-- Output the entire table.
+-- Original table has the following rows
 -- ┌─────────────┬────────────────┬────────────┐
 -- │ Employee_id │ Employee_Name  │ Department │
 -- ├─────────────┼────────────────┼────────────┤
@@ -19,15 +19,12 @@
 -- │ 2           │ Ethan Chen     │ Operations │
 -- │ 3           │ Julia Lee      │ Hr         │
 -- └─────────────┴────────────────┴────────────┘
--- Code it out in the IDE.
 
 
-/*Write a query to set the Department as 'HR', for the employee with employee_id 2 to the existing table employee. */
+/* Write a query to add a column 'Designation' to the table and set 'Null' as the default value. Output the entire table.*/
 
 
--- UPDATE employee
--- SET Department = 'Hr'
--- WHERE employee_id = 2;
+-- ALTER TABLE employee
+-- ADD COLUMN Designation TEXT default NULL;
 
--- SELECT * FROM employee
-
+-- SELECT * FROM employee 
