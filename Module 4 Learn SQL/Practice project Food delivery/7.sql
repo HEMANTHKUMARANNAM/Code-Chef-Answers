@@ -26,6 +26,10 @@
 
 
 
+
+
+
+
 -- ANSWER
 
 /* The query given below is incorrect. Debug this query to solve the problem */
