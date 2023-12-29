@@ -39,17 +39,12 @@
 Output the counts on separate lines */
 
 
-SELECT COUNT(*) AS count_sales
-FROM employee
-WHERE Department = 'Sales';
 
-SELECT MAX(Hourly_pay) AS ops_max_pay
-FROM employee
-WHERE Department = 'Operations';
+SELECT MAX(Hourly_pay) AS max_pay
+FROM employee;
 
-SELECT MIN(Hourly_pay) AS ops_min_pay
-FROM employee
-WHERE Department = 'Operations';
+SELECT MIN(Hourly_pay) AS min_pay
+FROM employee;
 
 
 
