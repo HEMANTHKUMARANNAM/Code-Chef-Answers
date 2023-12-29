@@ -41,3 +41,20 @@
 -- └─────────────┘
 
 
+-- ANSWER
+
+
+SELECT COUNT(*) AS count_sales
+FROM employee
+WHERE department = 'Sales';
+
+SELECT MAX(Hourly_pay) AS ops_max_pay
+FROM employee
+WHERE department = 'Operations';
+
+SELECT MIN(Hourly_pay) AS OPS_min_pay
+FROM employee
+WHERE department = 'Operations';
+
+
+
