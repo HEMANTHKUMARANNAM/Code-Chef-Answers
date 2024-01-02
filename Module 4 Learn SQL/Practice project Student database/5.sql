@@ -26,6 +26,11 @@
 -- Department(VARCHAR)
 
 
+
+
+
+-- ANSWER
+
 /* Write a query to do the following
 - For each department
 - Find the average marks (round to 2 decimal places) of the students 

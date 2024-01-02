@@ -15,11 +15,12 @@
 -- Expected output
 --  ──────────
 -- │ 8        │
-└──────────┘
+-- └──────────┘
 
 
 
 
+-- ANSWER
 
 /* Find the numbers of students in the department 'Commerce' */
 

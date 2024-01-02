@@ -33,6 +33,9 @@
 
 
 
+-- ANSWER
+
+
 
 /* Write a query to output the following on separate lines
 - The Average age of the students of the school

@@ -29,6 +29,9 @@
 -- Department(VARCHAR)
 
 
+-- ANSWER
+
+
 /* Find the Minimum and the Maximum marks scored by the students in the department 'Science'.
 Output these marks on separate lines. */
 
