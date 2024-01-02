@@ -12,3 +12,5 @@
 -- GROUP BY statement in SQL are used to combine rows with identical values into summary rows.
 -- GROUP BY is frequently used with the syntax HAVING to apply filters at a group level
 -- Lets proceed and learn some new Intermediate level concepts!
+
+
