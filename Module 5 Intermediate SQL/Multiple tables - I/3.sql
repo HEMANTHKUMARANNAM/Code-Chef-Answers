@@ -39,6 +39,12 @@
 
 
 
+
+
+
+
+-- ANSWER
+
 SELECT *
 FROM employee
 JOIN department

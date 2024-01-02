@@ -24,6 +24,14 @@
 
 
 
+
+
+
+
+
+
+-- ANSWER
+
 WITH topper AS(  
     SELECT st_name,dept_id
     FROM student

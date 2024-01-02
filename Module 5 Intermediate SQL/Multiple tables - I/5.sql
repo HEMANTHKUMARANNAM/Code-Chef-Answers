@@ -15,3 +15,7 @@
 -- St_id	St_Name	Department	Course_id	Course_id	Course_Name	Credits	Prof_id
 -- 1002	Emily Brown	History	HIS102	HIS102	World History II	3	2004
 -- 1005	Michael Chen	Biology	BIO103	BIO103	Principles of Biology	4	2005
+
+
+
+-- ANSWER

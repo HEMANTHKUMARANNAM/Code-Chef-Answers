@@ -16,6 +16,13 @@
 -- P107	5	7493
 
 
+
+
+
+
+
+-- ANSWER
+
 Correct Answer:
 
 Customer_id is a foreign key in the table Purchase 

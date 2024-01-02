@@ -34,3 +34,17 @@
 
 
 
+
+
+
+
+-- ANSWER
+
+/* Write a query to output a table with the list of possible item all the customers could be buy. The output table should contain the columns 'Customer_Name' and 'Item_Name'. */
+
+
+select Customer_Name,Item_Name
+from customer
+cross join
+item
+
