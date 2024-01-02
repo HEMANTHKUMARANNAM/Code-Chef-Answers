@@ -39,3 +39,13 @@
 
 
 
+/* Write a query to fetch Name and type of the food from the table 'food' which has got rating  less than 3 in the table 'ratings'.*/
+
+select f_name,f_type
+from food
+join ratings
+on food.f_id = ratings.f_id
+where f_rating < 3;
+
+
+
