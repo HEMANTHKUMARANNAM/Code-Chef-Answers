@@ -1,26 +1,32 @@
--- We know that 'XYZ Pvt.Ltd.' has part time employees. The full time and part time employees are given employee id in different format. The Hr teams wants to know the employee id and name of the Part time employees who are added to the master table 'employee'
+-- Write a query to do the following
 
--- Task
--- Write a query to output employee id and name of the part time employees from the table 'employee'.
--- Hint: Table 'employee' has the details of all employees (including part time employees). However, table 'pt_employee' has the details of all active and non active part time employees.
-
+-- Output the name of employees from the table 'Employee' who meet the following condition
+-- Employee age is less than the average age of the employees of the department 'Sales'.
 -- Expected output
--- ┌────────┬──────────────┐
--- │ emp_id │   emp_name   │
--- ├────────┼──────────────┤
--- │ PT56   │ Tom Wilson   │
--- │ PT57   │ Emily Parker │
--- │ PT58   │ Mike Adams   │
--- │ PT59   │ Megan Kim    │
--- └────────┴──────────────┘
+-- ┌──────────────┐
+-- │   emp_name   │
+-- ├──────────────┤
+-- │ John Doe     │
+-- │ Tom Brown    │
+-- │ Emily Chen   │
+-- │ Peter Nguyen │
+-- │ Alex Lee     │
+-- └──────────────┘
+-- Your table 'Employee' has the following fields:
 
 
 
-/* Write a query to output a table with all the details of the part time employees from the table 'employee'. */
+-- emp_id INT PRIMARY KEY,
+-- emp_name VARCHAR(255) NOT NULL,
+-- emp_age INT,
+-- emp_dept VARCHAR(255)
 
 
-select emp_id,emp_name
+
+/* Write a query to output the name of employees who has age less than the average age of the employees of the department 'Sales'. */
+
+SELECT emp_name
 from employee
-intersect
-select emp_id,emp_name
-from pt_employee;
+where emp_age < (SELECT AVG(emp_age)
+                from employee
+                where emp_dept  = 'Sales');

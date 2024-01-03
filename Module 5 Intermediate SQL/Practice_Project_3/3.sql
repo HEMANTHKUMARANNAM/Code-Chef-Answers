@@ -1,19 +1,26 @@
--- Re-arrange the query to find the number of orders that fall under the category 'Veg' across the Cuisine.
--- The output table should have the types of Cuisines and the count of Veg dishes in them.
+-- We know that 'XYZ Pvt.Ltd.' has part time employees. The full time and part time employees are given employee id in different format. The Hr teams wants to know the employee id and name of the Part time employees who are added to the master table 'employee'
 
--- Your table 'Orders' has the following fields:
+-- Task
+-- Write a query to output employee id and name of the part time employees from the table 'employee'.
+-- Hint: Table 'employee' has the details of all employees (including part time employees). However, table 'pt_employee' has the details of all active and non active part time employees.
 
--- order_id INT PRIMARY KEY,
--- item_name VARCHAR(255),
--- cuisine VARCHAR(255) ,
--- category VARCHAR(255) ,
--- price DECIMAL(10,2),
--- status VARCHAR(255)
--- Did you like the problem?
+-- Expected output
+-- ┌────────┬──────────────┐
+-- │ emp_id │   emp_name   │
+-- ├────────┼──────────────┤
+-- │ PT56   │ Tom Wilson   │
+-- │ PT57   │ Emily Parker │
+-- │ PT58   │ Mike Adams   │
+-- │ PT59   │ Megan Kim    │
+-- └────────┴──────────────┘
 
 
 
-SELECT cuisine, 
-COUNT(CASE WHEN category = 'Veg' THEN 1 ELSE NULL END)
-FROM Orders
-GROUP BY cuisine;
+/* Write a query to output a table with all the details of the part time employees from the table 'employee'. */
+
+
+select emp_id,emp_name
+from employee
+intersect
+select emp_id,emp_name
+from pt_employee;

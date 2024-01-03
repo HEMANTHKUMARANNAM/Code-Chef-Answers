@@ -1,52 +1,22 @@
--- XYZ Pvt Ltd has fulltime employees and parttime employees in their payroll. All the part time employee are recruited from a third party agency. The table 'pt_employee' has the details of all the active and non active part time workers. The master table 'employee' has the details of all full time employees and also few part time employees who are active.
 
--- Task
--- Write a query to output a single table with the names of employees in both the table 'employee' and 'pt_employee'.
--- Employee names are added on the field emp_name in both the tables.
--- Note: Do not remove the duplicate names while combining both the tables.
+-- Rearrange the query to output the names of the employees whose salary is more than 150000.
 
--- Expected output
--- ┌─────────────────┐
--- │    emp_name     │
--- ├─────────────────┤
--- │ John Smith      │
--- │ Sarah Johnson   │
--- │ Mark Davis      │
--- │ Lisa Brown      │
--- │ Kevin Lee       │
--- │ Tom Wilson      │
--- │ Emily Parker    │
--- │ Mike Adams      │
--- │ Megan Kim       │
--- │ Adam Scott      │
--- │ Jessica Lee     │
--- │ David Chen      │
--- │ Julia Lee       │
--- │ Daniel Brown    │
--- │ Olivia Taylor   │
--- │ Maxwell Johnson │
--- │ Ashley Kim      │
--- │ Jackie Nguyen   │
--- │ Derek Smith     │
--- │ Emily Wang      │
--- │ Nate Thomas     │
--- │ Sophia Lee      │
--- │ Tom Wilson      │
--- │ Emily Parker    │
--- │ Mike Adams      │
--- │ Megan Kim       │
--- └─────────────────┘
+-- Your table 'employee' has the following fields:
+
+-- emp_id INT PRIMARY KEY,
+-- emp_name VARCHAR(255) NOT NULL,
+-- emp_age INT,
+-- emp_dept VARCHAR(255)
+-- Your table 'salary' has the following fields:
+
+-- emp_id INT
+-- salary_amt INT
 
 
-/* Write a query to output a single table with the names of employees in both  the table 'employee' and 'pt_employee'.
-Employee names are added on the field emp_name in both the tables.
-Note: Do not remove the duplicate names while combining both the tables. */
 
-
-SELECT emp_name
+SELECT emp_name 
 FROM employee
-
-UNION ALL
-
-SELECT emp_name
-FROM pt_employee;
+WHERE emp_id IN ( 
+SELECT emp_id 
+FROM salary
+WHERE salary_amt >150000);

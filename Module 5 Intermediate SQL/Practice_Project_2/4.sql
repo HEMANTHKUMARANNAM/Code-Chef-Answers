@@ -1,8 +1,3 @@
--- HR team now wants the details of ONLY the full time employees.
+Correct Answer:
 
--- Task
--- Re arrange code to fetch the details of the full time employees from the table 'employee'.
-
-SELECT * FROM employee
-EXCEPT
-SELECT * FROM pt_employee
+Correlated subqueries are dependent on the outer query while non-correlated subqueries are independent of the outer query.

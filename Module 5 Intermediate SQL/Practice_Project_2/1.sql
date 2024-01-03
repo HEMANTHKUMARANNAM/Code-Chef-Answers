@@ -1,24 +1,28 @@
--- Welcome to the Project which will help you practice everything that you learnt about Set Operations.
-
--- Imagine you are hired by 'XYZ Pvt Ltd' as their data analyst. Your initial task is to assist the HR team to help them get a clarity on their employee data base.
+-- Imagine you are hired as a Database analyst of ABC e-commerce website.
+-- Your task is to assist the HR / admin staff with the required data.
+-- Lets have a look at the employee's table.
 
 -- Task
--- Write a query to output the details of employees in the table 'employee'. Limit to 5 rows.
+-- Write a query to output the table 'employee' limited to 5 rows.
 
 -- Expected output
--- ┌────────┬───────────────┬────────────┬───────────────────────────┐
--- │ emp_id │   emp_name    │ department │          mail_id          │
--- ├────────┼───────────────┼────────────┼───────────────────────────┤
--- │ 1      │ John Smith    │ Sales      │ john.smith@company.com    │
--- │ 2      │ Sarah Johnson │ Marketing  │ sarah.johnson@company.com │
--- │ 3      │ Mark Davis    │ Finance    │ mark.davis@company.com    │
--- │ 4      │ Lisa Brown    │ Sales      │ lisa.brown@company.com    │
--- │ 5      │ Kevin Lee     │ IT         │ kevin.lee@company.com     │
--- └────────┴───────────────┴────────────┴───────────────────────────┘
+-- ┌────────┬───────────────┬─────────┬─────────────────┐
+-- │ emp_id │   emp_name    │ emp_age │    emp_dept     │
+-- ├────────┼───────────────┼─────────┼─────────────────┤
+-- │ 1      │ John Doe      │ 28      │ Sales           │
+-- │ 2      │ Jane Smith    │ 35      │ Marketing       │
+-- │ 3      │ Bob Johnson   │ 42      │ Engineering     │
+-- │ 4      │ Mary Williams │ 31      │ Human Resources │
+-- │ 5      │ Tom Brown     │ 26      │ IT              │
+-- └────────┴───────────────┴─────────┴─────────────────┘
 
 
-/* Write a query to output the details of employees in the table 'employee'. Limit to 5 rows. */
 
-select * 
+
+/* Write a query to output the table 'employee' limited to 5 rows. */
+
+
+select *
 from employee
 limit 5;
+

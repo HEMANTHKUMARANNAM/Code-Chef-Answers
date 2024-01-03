@@ -1,27 +1,24 @@
--- 'Cafe CodeChef' has hired you as their data analyst.
--- Your job is to help the business development to give insights on the revenue generated from the cafe.
+-- Welcome to the Project which will help you practice everything that you learnt about Set Operations.
 
--- Lets take a look at the table 'Orders'.
+-- Imagine you are hired by 'XYZ Pvt Ltd' as their data analyst. Your initial task is to assist the HR team to help them get a clarity on their employee data base.
 
 -- Task
--- Output the table 'Orders', limited to 5 entries.
+-- Write a query to output the details of employees in the table 'employee'. Limit to 5 rows.
 
 -- Expected output
--- ┌──────────┬──────────────────┬──────────┬──────────┬───────┬────────┐
--- │ order_id │    item_name     │ cuisine  │ category │ price │ status │
--- ├──────────┼──────────────────┼──────────┼──────────┼───────┼────────┤
--- │ 1        │ Veggie Burger    │ American │ Veg      │ 9.99  │ Sold   │
--- │ 3        │ Margherita Pizza │ Italian  │ Veg      │ 14.99 │ Sold   │
--- │ 4        │ Pepperoni Pizza  │ Italian  │ Non veg  │ 16.99 │ Sold   │
--- │ 2        │ Veggie Burger    │ American │ Veg      │ 9.99  │ Sold   │
--- │ 6        │ Pepperoni Pizza  │ Italian  │ Non veg  │ 16.99 │ Sold   │
--- └──────────┴──────────────────┴──────────┴──────────┴───────┴────────┘
+-- ┌────────┬───────────────┬────────────┬───────────────────────────┐
+-- │ emp_id │   emp_name    │ department │          mail_id          │
+-- ├────────┼───────────────┼────────────┼───────────────────────────┤
+-- │ 1      │ John Smith    │ Sales      │ john.smith@company.com    │
+-- │ 2      │ Sarah Johnson │ Marketing  │ sarah.johnson@company.com │
+-- │ 3      │ Mark Davis    │ Finance    │ mark.davis@company.com    │
+-- │ 4      │ Lisa Brown    │ Sales      │ lisa.brown@company.com    │
+-- │ 5      │ Kevin Lee     │ IT         │ kevin.lee@company.com     │
+-- └────────┴───────────────┴────────────┴───────────────────────────┘
 
 
+/* Write a query to output the details of employees in the table 'employee'. Limit to 5 rows. */
 
-/* Output the table 'Orders', limited to 5 entries. */
-
-
-select * from Orders
+select * 
+from employee
 limit 5;
-
