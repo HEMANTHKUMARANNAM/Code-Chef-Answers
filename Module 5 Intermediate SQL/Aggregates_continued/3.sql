@@ -50,6 +50,6 @@ CASE
     else 'NA'
     
 END AS 'Grades',
-COUNT(*) as St_id AS 'student_count'
+COUNT(*)  AS 'student_count'
 FROM marks
 GROUP BY 1;
