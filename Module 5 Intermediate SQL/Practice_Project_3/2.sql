@@ -25,3 +25,17 @@
 -- status VARCHAR(255)
 
 
+
+/* The final output table should have the price grouped(Aliased as Pay_Category) as above and the count of the dishes falling in the respective category. */
+
+select  
+CASE
+    when price < 10 THEN 'Low'
+    WHEN price between 10 AND 18 THEN 'Medium'
+    WHEN price > 18 THEN 'High'
+    else 'NA'
+    
+END AS 'Pay_Category',
+COUNT(*)  AS 'Dish_count'
+FROM Orders
+GROUP BY 1;
