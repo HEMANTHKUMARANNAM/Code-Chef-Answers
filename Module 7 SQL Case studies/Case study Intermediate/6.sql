@@ -23,3 +23,8 @@
 -- product_id	product_type	division	margin_type	selling_price	profit_per_product
 -- 1001	Tshirt	Menswear	Low_Margin	20	5
 -- 2002	Jeans	Womenswear	High_Margin	80	40
+
+
+
+
+Answer will be updated in 2 days (Before  February 2 2024)
