@@ -43,3 +43,38 @@
 -- 1001	Tshirt	Menswear	Low_Margin	20	5
 -- 2002	Jeans	Womenswear	High_Margin	80	40
 -- 3001	Trousers	Kidswear	New_Product	30	10
+
+
+
+
+/* Write a query to perform the following
+- Join the tables - 'product_catalog' and division_product_sales' 
+- Output product_id, selling_price, units_sold and month from the joined table
+- Remember the condition - we need to identify the product_id which is sold the most in each month
+- Order by the units_sold in descending order */
+
+WITH ranked_products AS (
+    SELECT
+        dps.product_id,
+        pc.selling_price,
+        dps.units_sold,
+        dps.month,
+        RANK() OVER (PARTITION BY dps.month ORDER BY dps.units_sold DESC, pc.selling_price DESC) AS rank_in_month
+    FROM
+        division_product_sales dps
+    JOIN
+        product_catalog pc ON dps.product_id = pc.product_id
+)
+
+
+SELECT
+    product_id,
+    selling_price,
+    units_sold as  max_sold,
+    month
+FROM
+    ranked_products
+WHERE
+    rank_in_month = 1
+ORDER BY
+    units_sold DESC, selling_price DESC;

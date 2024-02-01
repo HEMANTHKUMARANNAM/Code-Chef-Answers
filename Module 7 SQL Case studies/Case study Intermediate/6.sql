@@ -23,3 +23,19 @@
 -- product_id	product_type	division	margin_type	selling_price	profit_per_product
 -- 1001	Tshirt	Menswear	Low_Margin	20	5
 -- 2002	Jeans	Womenswear	High_Margin	80	40
+
+
+
+
+create table data as
+SELECT *,
+RANK() OVER (PARTITION BY product_id ORDER BY units_sold ASC , month ASC) AS sales_rank
+FROM 
+division_product_sales
+ORDER by product_id;
+
+
+SELECT product_id,units_sold,month 
+from data
+WHERE sales_rank = 1;
+
