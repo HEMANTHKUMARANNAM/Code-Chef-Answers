@@ -6,4 +6,6 @@ MODULE 5 COMPLETED
 
 MODULE 7 COMPLETED ( THERE IS ISSUE WITH ONE QUESTION )
 
-YOU 
+GOT ANSWER FOR (Module 7 SQL Case studies > Case study Intermediate 6.sql) QUESTION 
+
+ mail to 99220041106@klu.com 

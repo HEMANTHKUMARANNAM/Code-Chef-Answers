@@ -39,3 +39,6 @@ SELECT product_id,units_sold,month
 from data
 WHERE sales_rank = 1;
 
+
+
+-- PROBLEM IN SOLUTION
