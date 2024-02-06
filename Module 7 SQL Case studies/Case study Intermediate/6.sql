@@ -35,10 +35,37 @@ division_product_sales
 ORDER by product_id;
 
 
-SELECT product_id,units_sold,month 
+SELECT product_id,units_sold as min_sold ,month 
 from data
 WHERE sales_rank = 1;
 
 
 
--- PROBLEM IN SOLUTION
+
+
+
+-- /* Solution as follows */
+
+-- -- This section of the query is selecting rows to output
+-- select pc.product_id,
+--         dps.min_sold, 
+--         dps.month
+-- from product_catalog as pc
+
+-- -- This section of the subquery is finding the worst performing month for each product_id in terms of units sold
+-- join (
+--     SELECT 
+--         s1.product_id,
+--         s1.units_sold as min_sold,
+--         s1.month 
+--     FROM division_product_sales as s1
+--     WHERE s1.units_sold = (
+--         SELECT 
+--             MIN(s2.units_sold) 
+--         FROM division_product_sales as s2 
+--         WHERE s2.product_id = s1.product_id
+--         )
+--     ) as dps
+
+-- on (pc.product_id = dps.product_id)
+-- order by pc.product_id;
