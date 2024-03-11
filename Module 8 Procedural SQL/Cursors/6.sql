@@ -22,3 +22,55 @@
 -- Roll number: 5, Student name: William
 -- Math: 95, Sci: 85, Eng: 90
 -- Total score: 270, Final result: Pass
+
+
+
+
+
+
+
+DECLARE
+    CURSOR student_cursor IS
+        SELECT roll_number, student_name, math_score, sci_score, eng_score
+        FROM student_details;
+    v_roll_number student_details.roll_number%TYPE;
+    v_student_name student_details.student_name%TYPE;
+    v_math_score student_details.math_score%TYPE;
+    v_sci_score student_details.sci_score%TYPE;
+    v_eng_score student_details.eng_score%TYPE;
+    v_total_score NUMBER;
+    v_final_result VARCHAR2(10);
+BEGIN
+    OPEN student_cursor;
+    LOOP
+        FETCH student_cursor INTO v_roll_number , v_student_name , v_math_score , v_sci_score , v_eng_score ;
+        EXIT when student_cursor%NOTFOUND;
+        
+        -- Calculate total score
+        
+        v_total_score := v_math_score + v_eng_score + v_sci_score;
+
+
+        -- Determine final result
+        
+        IF v_total_score > 105 THEN 
+            v_final_result := 'Pass';
+        else
+            v_final_result := 'Fail';
+        END IF;
+
+
+
+
+        
+        -- Output marklist
+        DBMS_OUTPUT.PUT_LINE('Roll number: ' || v_roll_number || ', Student name: ' || v_student_name);
+        DBMS_OUTPUT.PUT_LINE('Math: ' || v_math_score || ', Sci: ' || v_sci_score || ', Eng: ' || v_eng_score);
+        DBMS_OUTPUT.PUT_LINE('Total score: ' || v_total_score || ', Final result: ' || v_final_result);
+    END LOOP;
+    CLOSE student_cursor;
+END;
+/
+
+
+
