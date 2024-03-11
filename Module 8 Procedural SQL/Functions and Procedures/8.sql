@@ -13,3 +13,31 @@
 
 -- print_full_name() provide output with the existing parameters with default values
 -- print_full_name(last_name => 'Smith', first_name => 'Alice') provides output with the actual parameters - even though their positions are interchanged, these are correctly ordered in the output
+
+
+
+
+
+
+
+
+
+CREATE OR REPLACE PROCEDURE print_full_name(
+    first_name VARCHAR2 := 'John', 
+    last_name VARCHAR2 := 'Doe'
+) IS
+BEGIN
+    DBMS_OUTPUT.PUT_LINE('Full Name: ' || first_name || ' ' || last_name);
+END;
+/
+
+BEGIN
+    print_full_name();
+END;
+/
+
+BEGIN
+    print_full_name(last_name => 'Smith', first_name => 'Alice');
+END;
+/
+

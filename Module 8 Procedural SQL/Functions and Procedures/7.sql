@@ -8,3 +8,18 @@
 -- Example of calling a procedure with positional parameters:
 -- Check out the code in the IDE as an example.
 -- Run the code to check the output.
+
+
+
+
+
+CREATE OR REPLACE PROCEDURE print_full_name(first_name VARCHAR2, last_name VARCHAR2) IS
+BEGIN
+    DBMS_OUTPUT.PUT_LINE('Full Name: ' || first_name || ' ' || last_name);
+END;
+/
+
+BEGIN
+    print_full_name('John', 'Doe');
+END;
+/

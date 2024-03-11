@@ -8,3 +8,22 @@
 --     -- Procedure body
 --     -- Perform tasks here
 -- END procedure_name;
+
+
+
+
+
+
+
+
+CREATE OR REPLACE PROCEDURE print_hello IS
+BEGIN
+    DBMS_OUTPUT.PUT_LINE('Hello, World!');
+END print_hello;
+/
+
+DECLARE
+BEGIN
+    print_hello; -- Calling the procedure
+END;
+/

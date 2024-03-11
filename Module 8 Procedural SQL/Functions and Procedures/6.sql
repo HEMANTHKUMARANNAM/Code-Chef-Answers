@@ -13,3 +13,26 @@
 -- 16
 -- 18
 -- 20
+
+
+
+
+
+CREATE OR REPLACE PROCEDURE print_first_10_even_numbers IS
+BEGIN
+    
+    FOR I IN 1 .. 10 LOOP
+        DBMS_OUTPUT.PUT_LINE(2*I);
+    END LOOP;
+END print_first_10_even_numbers;
+
+
+
+
+/
+
+DECLARE
+BEGIN
+    print_first_10_even_numbers; -- Calling the procedure
+END;
+/
