@@ -8,6 +8,12 @@
 -- Declare a variable named "result" of type NUMBER to store the result of an arithmetic expression.
 -- Perform arithmetic operations (addition, subtraction, multiplication, division) using "num1" and "num2" and store the result in "result".
 
+
+
+
+
+
+
 -- Update the code below to solve the problem
 DECLARE
   num1 NUMBER := 10;

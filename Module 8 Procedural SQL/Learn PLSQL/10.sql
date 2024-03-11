@@ -18,6 +18,12 @@
 -- Iteration: 5
 
 
+
+
+
+
+
+
 DECLARE
     v_counter NUMBER := 1; -- Initialize a counter variable
 BEGIN
@@ -28,7 +34,7 @@ BEGIN
         
         -- Update this line to increment the counter
         
-        v_counter := v_counter + 1;
+        
         
         
         -- Update this line to exit the loop when the counter reaches a value 5
@@ -36,11 +42,15 @@ BEGIN
             EXIT;
         END IF;
         
+        v_counter := v_counter + 1;
+        
         
         
         
     END LOOP; -- End of the loop
     
 END;
+
+/
 
 /

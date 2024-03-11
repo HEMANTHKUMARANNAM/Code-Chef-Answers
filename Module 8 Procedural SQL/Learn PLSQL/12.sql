@@ -20,19 +20,17 @@
 -- Current Counter Value: 4
 -- Current Counter Value: 5
 
+
+
+
+
 DECLARE
     v_counter NUMBER := 1;
 BEGIN
     -- Update the syntas
-    LOOP
+    FOR v_counter IN 1 .. 5 LOOP
         DBMS_OUTPUT.PUT_LINE('Current Counter Value: ' || v_counter);
         
-        IF v_counter = 5 THEN
-        EXIT;
-        END IF;
-        
-        
-        v_counter := v_counter + 1;
         
     END LOOP;
 END;

@@ -10,6 +10,12 @@
 -- END IF;
 -- Check the code implementation in the IDE.
 
+
+
+
+
+
+
 -- Click on 'Submit' to continue
 DECLARE
     v_number NUMBER := 20; 

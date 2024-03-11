@@ -19,6 +19,12 @@
 -- Check the code in the IDE - click on 'Submit' to continue.
 
 
+
+
+
+
+
+
 DECLARE
     v_day VARCHAR2(10) := 'Sunday';
 BEGIN

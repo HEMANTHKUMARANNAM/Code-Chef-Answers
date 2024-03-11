@@ -11,6 +11,12 @@
 -- END;: This marks the end of the PL/SQL block.
 -- Click on 'Submit' to view the result.
 
+
+
+
+
+
+
 DECLARE
   v_employee_id NUMBER := 103;  -- Declare a variable for employee ID
   v_employee_name VARCHAR2(100) := 'John Doe'; -- Declare a variable for employee name

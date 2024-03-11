@@ -15,6 +15,10 @@
 -- END
 -- Check out the example in the IDE - click on 'Submit' to proceed.
 
+
+
+
+
 DECLARE
     v_score NUMBER := 85; -- Sample exam score
     v_grade VARCHAR2(2); -- Variable to hold the grade

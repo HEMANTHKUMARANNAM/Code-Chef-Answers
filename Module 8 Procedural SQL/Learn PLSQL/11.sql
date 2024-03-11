@@ -18,16 +18,17 @@
 -- Iteration: 4
 -- Iteration: 5
 
+
+
+
+
 DECLARE
     v_counter NUMBER := 1; -- Initialize a counter variable
 BEGIN
     -- Start of the while loop
-    WHILE  
+    WHILE v_counter <6 LOOP
         -- Perform actions or execute statements inside the loop
-        
-         IF v_counter = 6 THEN
-            EXIT;
-        END IF;
+        DBMS_OUTPUT.PUT_LINE('Iteration: ' || v_counter);
 
         
         -- Increment the counter

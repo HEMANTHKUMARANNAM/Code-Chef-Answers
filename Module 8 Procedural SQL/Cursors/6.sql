@@ -1,0 +1,24 @@
+-- Practice - Report Card
+-- We have a table of student containing their scores in 3 subjects - Math, Science and English.
+
+-- Task
+-- We want a PL/SQL query which uses cursors to output a final marklist for each student.
+
+-- Max scores possible in each of the 3 subjects is 100
+-- If sum of scores in 3 subjects is greater than 105, then final_result is 'Pass' else 'Fail'
+-- Expected output
+-- Roll number: 1, Student name: John
+-- Math: 90, Sci: 85, Eng: 80
+-- Total score: 255, Final result: Pass
+-- Roll number: 2, Student name: Emma
+-- Math: 35, Sci: 35, Eng: 34
+-- Total score: 104, Final result: Fail
+-- Roll number: 3, Student name: Michael
+-- Math: 80, Sci: 70, Eng: 85
+-- Total score: 235, Final result: Pass
+-- Roll number: 4, Student name: Sophia
+-- Math: 100, Sci: 0, Eng: 0
+-- Total score: 100, Final result: Fail
+-- Roll number: 5, Student name: William
+-- Math: 95, Sci: 85, Eng: 90
+-- Total score: 270, Final result: Pass

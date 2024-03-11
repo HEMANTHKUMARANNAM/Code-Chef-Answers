@@ -1,0 +1,5 @@
+-- Explicit cursors
+-- Explicit cursors are declared explicitly by the programmer using the CURSOR keyword.
+-- They provide more control and flexibility over result set processing compared to implicit cursors.
+-- Explicit cursors are used for queries that return multiple rows, allowing the programmer to fetch and process rows individually.
+-- Check out the sample code in the IDE / learn from the syntax.

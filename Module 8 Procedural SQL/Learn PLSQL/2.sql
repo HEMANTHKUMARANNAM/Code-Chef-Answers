@@ -10,6 +10,9 @@
 
 
 
+
+
+
 Correct Answer(s):
 
 SQL is used to retrieve data from the database, while PL/SQL is used to write procedural code for complex calculations.
