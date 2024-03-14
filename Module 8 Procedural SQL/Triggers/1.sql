@@ -11,3 +11,6 @@
 -- In this example, the check_order_amount trigger is fired before each new row is inserted into the orders table (BEFORE INSERT).
 -- For each row being inserted, the trigger checks if the total_amount of the new order exceeds the threshold (in this case, $1000).
 -- If it does, the trigger raises an application error, preventing the insertion of the order.
+
+
+
