@@ -1,0 +1,5 @@
+Correct Answer:
+
+S is both conflict-serializable and recoverable
+Explanation:
+To check for conflict-serializable, we need to make a precedence graph, if the graph contains a cycle, then it's not conflict serializable, else it is. Here, for the precedence graph there will be only two directed edges, one from T2 -> T3 ( Read- Write Conflict), and another from T2 -> T1( Read- Write Conflict), hence no cycle, so the schedule is conflict serializable. Now to check for Recoverable, we need to check for a dirty-read operation( Write by Transaction Ti, followed by Read by Transaction Tj but before Ti commits) between any pair of operations. If no dirty-read then recoverable schedule, if a dirty read is there then we need to check for commit operations. Here no dirty read operation ( as T3 and T1 commits before T4 reads the Write(X) of T3 and T1 , and T2 commits before T4 reads the Write(Y) of T2 ). Therefore the schedule is recoverable. Hence, Option C.
