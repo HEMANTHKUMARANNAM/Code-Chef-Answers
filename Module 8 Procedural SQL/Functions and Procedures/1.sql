@@ -17,3 +17,26 @@
 -- Task
 -- Run the code given in the IDE - check the output.
 -- Also check how the function is called.
+
+
+
+
+
+CREATE OR REPLACE FUNCTION calculate_rectangle_area(length NUMBER, width NUMBER) RETURN NUMBER IS
+    area NUMBER;
+BEGIN
+    area := length * width;
+    RETURN area;
+END;
+/
+
+DECLARE
+    length NUMBER := 5;
+    width NUMBER := 10;
+    rectangle_area NUMBER;
+BEGIN
+    rectangle_area := calculate_rectangle_area(length, width);
+    DBMS_OUTPUT.PUT_LINE('Area of the rectangle: ' || rectangle_area);
+END;
+/
+
