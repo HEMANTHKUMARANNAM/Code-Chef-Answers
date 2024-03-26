@@ -10,4 +10,4 @@ MODULE 8 COMPLETED
 
 
 
-PREACCESS : https://www.codechef.com/learn/course/pl-sql (USING PERSONAL MAIL)
+Pre-access : https://www.codechef.com/learn/course/pl-sql (USING PERSONAL MAIL)
