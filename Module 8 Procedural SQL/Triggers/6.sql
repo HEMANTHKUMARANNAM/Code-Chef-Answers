@@ -9,3 +9,23 @@
 
 -- Set emp_name = 'Hrishi'
 -- Set salary = 65000
+
+
+
+CREATE OR REPLACE TRIGGER prevent_update_admin_102
+BEFORE UPDATE ON employees
+FOR EACH ROW
+BEGIN
+    IF :OLD.emp_id = 102 THEN
+        RAISE_APPLICATION_ERROR(-20001, 'You cannot edit details of Admin employee 102');
+    END IF;
+END;
+/
+
+-- Solution as follows
+UPDATE employees
+SET emp_name = 'Admin', salary = 65000
+WHERE emp_id = 102;
+
+Select * from employees;
+

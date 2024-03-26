@@ -7,3 +7,19 @@
 
 -- In this example, the update_last_updated trigger fires before each row in the employees table is updated (BEFORE UPDATE).
 -- It updates the last_updated column of the affected row with the current date and time (SYSDATE).
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+NEXT

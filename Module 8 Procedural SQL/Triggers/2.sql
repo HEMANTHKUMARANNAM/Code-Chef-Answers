@@ -10,3 +10,15 @@
 -- AFTER triggers are executed after the triggering event has occurred.
 -- They are typically used for validation, auditing, logging, or other post-processing tasks.
 -- Common use cases for AFTER triggers include logging changes, updating related tables, or performing calculations based on the changes made by the triggering event.
+
+
+
+
+
+
+
+
+
+
+
+NEXT

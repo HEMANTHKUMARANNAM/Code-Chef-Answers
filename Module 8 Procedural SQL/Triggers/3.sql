@@ -13,3 +13,15 @@
 -- Auditing or logging activities
 -- Enforcing business rules for new data / data to be deleted
 -- Check some such rules built in in the triggers populated in the IDE.
+
+
+
+
+
+
+
+
+
+
+
+NEXT
