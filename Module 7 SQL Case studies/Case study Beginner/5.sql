@@ -37,11 +37,11 @@ Revenue in 'Aug' for 'New_products' 'Womenswear' needs to be updated to 10000
 
 UPDATE Financials
 SET Revenue = 25000
-WHERE Month = "Jul" and Product_type = "Low_Margin" and Division = "Menswear";
+WHERE Month = "Jul" and (Product_type = "Low_Margin" and Division = "Menswear");
 
 UPDATE Financials
 SET Revenue = 10000
-WHERE Month = "Aug" and Product_type = "New_Products" and Division = "Womenswear";
+WHERE Month = "Aug" and (Product_type = "New_Products" and Division = "Womenswear)";
 
 
 select * from Financials
