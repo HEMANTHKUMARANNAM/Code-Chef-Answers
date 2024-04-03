@@ -7,7 +7,3 @@ MODULE 5 COMPLETED
 MODULE 7 COMPLETED  
 
 MODULE 8 COMPLETED
-
-
-
-Pre-access : https://www.codechef.com/learn/course/pl-sql (USING PERSONAL MAIL)
